@@ -1,0 +1,11 @@
+C:\Project\AcceleratedLearning\C#\Omprov\Omprov\bin\Debug\netcoreapp2.0\Omprov.deps.json
+C:\Project\AcceleratedLearning\C#\Omprov\Omprov\bin\Debug\netcoreapp2.0\Omprov.runtimeconfig.json
+C:\Project\AcceleratedLearning\C#\Omprov\Omprov\bin\Debug\netcoreapp2.0\Omprov.runtimeconfig.dev.json
+C:\Project\AcceleratedLearning\C#\Omprov\Omprov\bin\Debug\netcoreapp2.0\Omprov.dll
+C:\Project\AcceleratedLearning\C#\Omprov\Omprov\bin\Debug\netcoreapp2.0\Omprov.pdb
+C:\Project\AcceleratedLearning\C#\Omprov\Omprov\obj\Debug\netcoreapp2.0\Omprov.csprojAssemblyReference.cache
+C:\Project\AcceleratedLearning\C#\Omprov\Omprov\obj\Debug\netcoreapp2.0\Omprov.csproj.CoreCompileInputs.cache
+C:\Project\AcceleratedLearning\C#\Omprov\Omprov\obj\Debug\netcoreapp2.0\Omprov.AssemblyInfoInputs.cache
+C:\Project\AcceleratedLearning\C#\Omprov\Omprov\obj\Debug\netcoreapp2.0\Omprov.AssemblyInfo.cs
+C:\Project\AcceleratedLearning\C#\Omprov\Omprov\obj\Debug\netcoreapp2.0\Omprov.dll
+C:\Project\AcceleratedLearning\C#\Omprov\Omprov\obj\Debug\netcoreapp2.0\Omprov.pdb

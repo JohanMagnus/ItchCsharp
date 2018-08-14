@@ -1,0 +1,11 @@
+C:\Project\AcceleratedLearning\C#\RandomNumber\RandomNumber\bin\Debug\netcoreapp2.0\RandomNumber.deps.json
+C:\Project\AcceleratedLearning\C#\RandomNumber\RandomNumber\bin\Debug\netcoreapp2.0\RandomNumber.runtimeconfig.json
+C:\Project\AcceleratedLearning\C#\RandomNumber\RandomNumber\bin\Debug\netcoreapp2.0\RandomNumber.runtimeconfig.dev.json
+C:\Project\AcceleratedLearning\C#\RandomNumber\RandomNumber\bin\Debug\netcoreapp2.0\RandomNumber.dll
+C:\Project\AcceleratedLearning\C#\RandomNumber\RandomNumber\bin\Debug\netcoreapp2.0\RandomNumber.pdb
+C:\Project\AcceleratedLearning\C#\RandomNumber\RandomNumber\obj\Debug\netcoreapp2.0\RandomNumber.csprojAssemblyReference.cache
+C:\Project\AcceleratedLearning\C#\RandomNumber\RandomNumber\obj\Debug\netcoreapp2.0\RandomNumber.csproj.CoreCompileInputs.cache
+C:\Project\AcceleratedLearning\C#\RandomNumber\RandomNumber\obj\Debug\netcoreapp2.0\RandomNumber.AssemblyInfoInputs.cache
+C:\Project\AcceleratedLearning\C#\RandomNumber\RandomNumber\obj\Debug\netcoreapp2.0\RandomNumber.AssemblyInfo.cs
+C:\Project\AcceleratedLearning\C#\RandomNumber\RandomNumber\obj\Debug\netcoreapp2.0\RandomNumber.dll
+C:\Project\AcceleratedLearning\C#\RandomNumber\RandomNumber\obj\Debug\netcoreapp2.0\RandomNumber.pdb

@@ -1,0 +1,11 @@
+C:\Project\AcceleratedLearning\C#\Övning 3.3 For\Övning 3.3 For\bin\Debug\netcoreapp2.0\Övning 3.3 For.deps.json
+C:\Project\AcceleratedLearning\C#\Övning 3.3 For\Övning 3.3 For\bin\Debug\netcoreapp2.0\Övning 3.3 For.runtimeconfig.json
+C:\Project\AcceleratedLearning\C#\Övning 3.3 For\Övning 3.3 For\bin\Debug\netcoreapp2.0\Övning 3.3 For.runtimeconfig.dev.json
+C:\Project\AcceleratedLearning\C#\Övning 3.3 For\Övning 3.3 For\bin\Debug\netcoreapp2.0\Övning 3.3 For.dll
+C:\Project\AcceleratedLearning\C#\Övning 3.3 For\Övning 3.3 For\bin\Debug\netcoreapp2.0\Övning 3.3 For.pdb
+C:\Project\AcceleratedLearning\C#\Övning 3.3 For\Övning 3.3 For\obj\Debug\netcoreapp2.0\Övning 3.3 For.csproj.CoreCompileInputs.cache
+C:\Project\AcceleratedLearning\C#\Övning 3.3 For\Övning 3.3 For\obj\Debug\netcoreapp2.0\Övning 3.3 For.AssemblyInfoInputs.cache
+C:\Project\AcceleratedLearning\C#\Övning 3.3 For\Övning 3.3 For\obj\Debug\netcoreapp2.0\Övning 3.3 For.AssemblyInfo.cs
+C:\Project\AcceleratedLearning\C#\Övning 3.3 For\Övning 3.3 For\obj\Debug\netcoreapp2.0\Övning 3.3 For.dll
+C:\Project\AcceleratedLearning\C#\Övning 3.3 For\Övning 3.3 For\obj\Debug\netcoreapp2.0\Övning 3.3 For.pdb
+C:\Project\AcceleratedLearning\C#\Övning 3.3 For\Övning 3.3 For\obj\Debug\netcoreapp2.0\Övning 3.3 For.csprojAssemblyReference.cache

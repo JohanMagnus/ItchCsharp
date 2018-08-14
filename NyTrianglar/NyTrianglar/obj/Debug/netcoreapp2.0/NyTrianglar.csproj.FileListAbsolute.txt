@@ -1,0 +1,11 @@
+C:\Project\AcceleratedLearning\C#\NyTrianglar\NyTrianglar\bin\Debug\netcoreapp2.0\NyTrianglar.deps.json
+C:\Project\AcceleratedLearning\C#\NyTrianglar\NyTrianglar\bin\Debug\netcoreapp2.0\NyTrianglar.runtimeconfig.json
+C:\Project\AcceleratedLearning\C#\NyTrianglar\NyTrianglar\bin\Debug\netcoreapp2.0\NyTrianglar.runtimeconfig.dev.json
+C:\Project\AcceleratedLearning\C#\NyTrianglar\NyTrianglar\bin\Debug\netcoreapp2.0\NyTrianglar.dll
+C:\Project\AcceleratedLearning\C#\NyTrianglar\NyTrianglar\bin\Debug\netcoreapp2.0\NyTrianglar.pdb
+C:\Project\AcceleratedLearning\C#\NyTrianglar\NyTrianglar\obj\Debug\netcoreapp2.0\NyTrianglar.csprojAssemblyReference.cache
+C:\Project\AcceleratedLearning\C#\NyTrianglar\NyTrianglar\obj\Debug\netcoreapp2.0\NyTrianglar.csproj.CoreCompileInputs.cache
+C:\Project\AcceleratedLearning\C#\NyTrianglar\NyTrianglar\obj\Debug\netcoreapp2.0\NyTrianglar.AssemblyInfoInputs.cache
+C:\Project\AcceleratedLearning\C#\NyTrianglar\NyTrianglar\obj\Debug\netcoreapp2.0\NyTrianglar.AssemblyInfo.cs
+C:\Project\AcceleratedLearning\C#\NyTrianglar\NyTrianglar\obj\Debug\netcoreapp2.0\NyTrianglar.dll
+C:\Project\AcceleratedLearning\C#\NyTrianglar\NyTrianglar\obj\Debug\netcoreapp2.0\NyTrianglar.pdb

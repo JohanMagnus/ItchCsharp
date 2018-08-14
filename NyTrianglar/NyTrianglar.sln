@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NyTrianglar", "NyTrianglar\NyTrianglar.csproj", "{B0D4674D-7F8D-426B-85DF-44BF8C10D9D0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0D4674D-7F8D-426B-85DF-44BF8C10D9D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0D4674D-7F8D-426B-85DF-44BF8C10D9D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0D4674D-7F8D-426B-85DF-44BF8C10D9D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0D4674D-7F8D-426B-85DF-44BF8C10D9D0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {11A5DD14-A6F4-4C53-BA70-0F84F1D5C225}
+	EndGlobalSection
+EndGlobal

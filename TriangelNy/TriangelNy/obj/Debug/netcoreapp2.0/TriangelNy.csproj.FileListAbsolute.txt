@@ -1,0 +1,11 @@
+C:\Project\AcceleratedLearning\C#\TriangelNy\TriangelNy\bin\Debug\netcoreapp2.0\TriangelNy.deps.json
+C:\Project\AcceleratedLearning\C#\TriangelNy\TriangelNy\bin\Debug\netcoreapp2.0\TriangelNy.runtimeconfig.json
+C:\Project\AcceleratedLearning\C#\TriangelNy\TriangelNy\bin\Debug\netcoreapp2.0\TriangelNy.runtimeconfig.dev.json
+C:\Project\AcceleratedLearning\C#\TriangelNy\TriangelNy\bin\Debug\netcoreapp2.0\TriangelNy.dll
+C:\Project\AcceleratedLearning\C#\TriangelNy\TriangelNy\bin\Debug\netcoreapp2.0\TriangelNy.pdb
+C:\Project\AcceleratedLearning\C#\TriangelNy\TriangelNy\obj\Debug\netcoreapp2.0\TriangelNy.csproj.CoreCompileInputs.cache
+C:\Project\AcceleratedLearning\C#\TriangelNy\TriangelNy\obj\Debug\netcoreapp2.0\TriangelNy.AssemblyInfoInputs.cache
+C:\Project\AcceleratedLearning\C#\TriangelNy\TriangelNy\obj\Debug\netcoreapp2.0\TriangelNy.AssemblyInfo.cs
+C:\Project\AcceleratedLearning\C#\TriangelNy\TriangelNy\obj\Debug\netcoreapp2.0\TriangelNy.dll
+C:\Project\AcceleratedLearning\C#\TriangelNy\TriangelNy\obj\Debug\netcoreapp2.0\TriangelNy.pdb
+C:\Project\AcceleratedLearning\C#\TriangelNy\TriangelNy\obj\Debug\netcoreapp2.0\TriangelNy.csprojAssemblyReference.cache

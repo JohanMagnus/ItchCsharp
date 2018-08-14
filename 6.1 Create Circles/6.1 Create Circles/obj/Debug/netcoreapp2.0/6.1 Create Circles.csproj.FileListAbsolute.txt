@@ -1,0 +1,11 @@
+C:\Project\AcceleratedLearning\C#\6.1 Create Circles\6.1 Create Circles\obj\Debug\netcoreapp2.0\6.1 Create Circles.csprojAssemblyReference.cache
+C:\Project\AcceleratedLearning\C#\6.1 Create Circles\6.1 Create Circles\obj\Debug\netcoreapp2.0\6.1 Create Circles.csproj.CoreCompileInputs.cache
+C:\Project\AcceleratedLearning\C#\6.1 Create Circles\6.1 Create Circles\obj\Debug\netcoreapp2.0\6.1 Create Circles.AssemblyInfoInputs.cache
+C:\Project\AcceleratedLearning\C#\6.1 Create Circles\6.1 Create Circles\obj\Debug\netcoreapp2.0\6.1 Create Circles.AssemblyInfo.cs
+C:\Project\AcceleratedLearning\C#\6.1 Create Circles\6.1 Create Circles\bin\Debug\netcoreapp2.0\6.1 Create Circles.deps.json
+C:\Project\AcceleratedLearning\C#\6.1 Create Circles\6.1 Create Circles\bin\Debug\netcoreapp2.0\6.1 Create Circles.runtimeconfig.json
+C:\Project\AcceleratedLearning\C#\6.1 Create Circles\6.1 Create Circles\bin\Debug\netcoreapp2.0\6.1 Create Circles.runtimeconfig.dev.json
+C:\Project\AcceleratedLearning\C#\6.1 Create Circles\6.1 Create Circles\bin\Debug\netcoreapp2.0\6.1 Create Circles.dll
+C:\Project\AcceleratedLearning\C#\6.1 Create Circles\6.1 Create Circles\bin\Debug\netcoreapp2.0\6.1 Create Circles.pdb
+C:\Project\AcceleratedLearning\C#\6.1 Create Circles\6.1 Create Circles\obj\Debug\netcoreapp2.0\6.1 Create Circles.dll
+C:\Project\AcceleratedLearning\C#\6.1 Create Circles\6.1 Create Circles\obj\Debug\netcoreapp2.0\6.1 Create Circles.pdb

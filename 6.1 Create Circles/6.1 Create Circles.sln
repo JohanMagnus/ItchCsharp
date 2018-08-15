@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6.1 Create Circles", "6.1 Create Circles\6.1 Create Circles.csproj", "{B1A247EB-1F01-49FA-8458-D91A3175FCBD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B1A247EB-1F01-49FA-8458-D91A3175FCBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1A247EB-1F01-49FA-8458-D91A3175FCBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1A247EB-1F01-49FA-8458-D91A3175FCBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1A247EB-1F01-49FA-8458-D91A3175FCBD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D66AC5E6-C4B0-4536-B673-CD9879F366CD}
+	EndGlobalSection
+EndGlobal

@@ -13,15 +13,12 @@ namespace _8._3_Animals_in_a_list
 
             TestString(list);
 
-
-            Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine($"There are {list.Length} animals in the list");
-
-
         }
 
-        public string TestString(string[] list)
+        private string TestString(string[] list)
         {
+
+
             foreach (var item in list)
             {
                 if (item.Length > 20)
@@ -48,15 +45,16 @@ namespace _8._3_Animals_in_a_list
                 }
 
             }
-            foreach (var item in list)
-            {
-                if (item.Contains)
-                {
+            //foreach (var item in list)
+            //{
+            //    if (item.Contains)
+            //    {
 
-                }
-            }
+            //    }
+            //}
 
-
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine($"There are {list.Length} animals in the list");
         }
         
     }

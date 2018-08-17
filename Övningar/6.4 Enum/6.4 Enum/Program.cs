@@ -6,7 +6,12 @@ namespace _6._4_Enum
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Person Lisa = new Person();
+            {
+                FirstName = Lisa;
+                Gender = Female
+
+            }
         }
 
         class Person

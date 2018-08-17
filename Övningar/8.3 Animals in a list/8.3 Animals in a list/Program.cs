@@ -12,10 +12,10 @@ namespace _8._3_Animals_in_a_list
             string[] list = input.Split(", ");
 
             TestString(list);
-
+  
         }
 
-        private string TestString(string[] list)
+        private static void TestString(string[] list)
         {
 
 

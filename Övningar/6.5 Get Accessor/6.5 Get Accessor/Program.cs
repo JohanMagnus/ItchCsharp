@@ -58,7 +58,6 @@ namespace _6._5_Get_Accessor
                 return Regex.IsMatch
             }
 
-            static RegexIs
 
         }
 

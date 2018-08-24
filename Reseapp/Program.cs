@@ -100,7 +100,7 @@ namespace Reseapp
                         Console.ForegroundColor = ConsoleColor.Magenta;
                        // Console.BackgroundColor = ConsoleColor.Gray;
                         Console.WriteLine("Ange i svenska kronor hur mycket du vill konvertera:");
-                        
+                        Console.ForegroundColor = ConsoleColor.Black;
                        // Console.BackgroundColor = ConsoleColor.Gray;
                         //Console.Clear();
                         //Console.ResetColor();
@@ -112,7 +112,7 @@ namespace Reseapp
                         Console.WriteLine("Tryck Enter för att kommma tillbaka till startmenyn.");
                         Console.ForegroundColor = ConsoleColor.Black;
                         Console.ReadKey();
-                        //Console.Clear();
+                        Console.Clear();
 
                         break;
 
@@ -166,9 +166,54 @@ namespace Reseapp
 
 
                     case "Q":
-                       
-               
-                        Console.WriteLine("Programmet avslutas.");
+                        Console.BackgroundColor = ConsoleColor.Gray;
+                        Console.Clear();
+                        Console.ResetColor();
+
+                        Console.ForegroundColor = ConsoleColor.Black;
+                        Console.BackgroundColor = ConsoleColor.White;
+                        Console.WriteLine("████████████▄░░░░░░░░░░░░░░░░░░░░░░░░░░░░░████" );
+                        Console.WriteLine("████████████▄▄▄░░░░░░░░░░░░░░░░░░░░░░░░░░░░███");
+                        Console.WriteLine("███████▀█▀███████▄▄░░░░░░░░░░░░░░░░░░░░░░░░░▀█");
+                        Console.WriteLine("███████▀░░░░▄█████▄░░░░░░░░░░░░░░░░░░░░░░░░░░█");
+                        Console.WriteLine("████████▄░░░░▀██████░░░░░░░░░░░░░░░░░░░░░░░░░█");
+                        Console.WriteLine("████████▄█▄▀▄░░▀████▄░░░░░░░░░░░░░░░░░░░░░░░░█");
+                        Console.WriteLine("███░░░▄▀▀▀░░░░▄░▄████▀░░░░░▄▄▄▄▄▄▄░░░░░░░░░░░█");
+                        Console.WriteLine("█░░░░░░░░▀░░░░▄████▀░░░░░░░█████▀███████▀▄░░░█");
+                        Console.WriteLine("█░░░░░░░░░░░▄██████░░░░░░░░░███▄▄▄░░▀░▀████▄░█");
+                        Console.WriteLine("█░░░░░░░░░░░█████▀░░░░░░░░░░▀░▀█▀░▀▄▄▄░░░▄██░█");
+                        Console.WriteLine("█░░░░░░░░░░░▄███▄░░░░░░░░░░░▀▄░▄░░░░░▀▀▄░░▀░░█");
+                        Console.WriteLine("█░░░░░░░░░▄░▄██▀░░░░░░░░░░░░░░░░░░░░░░░░▀░░░░█");
+                        Console.WriteLine("██▄░░░░░▄▄██▄█░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░█");
+                        Console.WriteLine("████▄░▄▄█████▀░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▄█");
+                        Console.WriteLine("████▄░▄███▄███░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░█");
+                        Console.WriteLine("████▄▀░▀░▀▄▀██▄░░░░░▄░░░░░░░░░░░░░░░░░░░░░░▄██" + "       Bob Marley säger hejdå!");
+                        Console.WriteLine("████▄█▄░▄░▄█▄░░▀░░░▀▄█▄░░░░░░░░░░░░░░░░░░▄████");
+                        Console.WriteLine("█████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░▄█████");
+                        Console.WriteLine("████████████▄░░█▄░░░▄░░░░░░░░░░░░░░░░░░▄██████");
+                        Console.WriteLine("██████████▄▄▄░░▀▀▀██▄░░░░░░░░░░░░░░░░░▄███████");
+                        Console.WriteLine("████▄░░░░▀████▄▀▄▄▄▀▄▀▄▄▄░░░░░░░░░░░░█████████");
+                        Console.WriteLine("██████▄░░░░░░▀░▀░▀███▄███▄░░░░░░░░░▄██████████");
+                        Console.WriteLine("████████▄▄▄▄▄░░▀░▀░░░░░░░▀████▄░░░▄███████████");
+                        Console.WriteLine("█████████▀░░░░░░░░░░░░░░░░░███░░▄█████████████");
+                        Console.WriteLine("█████▀░░░░░░░░░░░░░░░░░░░░░▀█▀░▄██████████████");
+                        Console.WriteLine("███▀░░░░░░░░░░▄██████▄░░░░░░░▀▄███████████████");
+                        Console.WriteLine("███▄░░░░▄█████████████▄▄▄▄▄░▄▄████████████████");
+                        Console.WriteLine("█████████████████▀▀▀░░░░░░░░░░░░▀█████████████");
+                        Console.WriteLine("███████████▀░░░░░░░░░░░░░░░░░░░░░░▀███████████");
+                        Console.WriteLine("█████████▀░░░░░░░░░░░░░░░░░▄▄░▄▄▄░░░██████████");
+                        Console.WriteLine("███████▀░░░░░░░░░░▄▄▄▄▄▄▄▄▀░░░░░░░░░░█████████");
+                        Console.WriteLine("█████▀░░░░░░░░▄▄▄██▀░░░░░░░░░░░░░░░░░░░███████");
+                        Console.WriteLine("███▀░░░░░░░▄▄██▀░░░░░░░░░░░░░▄▄▄▄▄▄░░░░░██████");
+                        Console.WriteLine("███░░░░░░▄▄█░░░░░░░░░░░░▄▄▄▄▄▀░░░░░░░░░░░█████");
+                        Console.WriteLine("██░░░░░░▄██▀░░░░▄▄▄▄▄▀▀▀░░░░░░░░░░░░░░░░░░████");
+                        Console.WriteLine("█░░░░░▄███░░░░▄████░░░░░░░░░░░░░░░░░░░░░░░░███");
+                        Console.WriteLine("░░░░░▄███▀░░░▄███▀░░░░░░░░░░▄░░░░░░░░░░░░░░░██");
+                        Console.WriteLine("░░░░▄███░░░░███▀░░░░░░▄██████▀░░░░░░░░░░░░░░░█");
+                        Console.ReadKey();
+
+
+                        
                         meny = false;
 
                         break;

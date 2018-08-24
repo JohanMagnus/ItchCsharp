@@ -8,6 +8,7 @@ using System.Media;
 
 namespace Reseapp
 {
+    
     class Program
     {
         static void Main(string[] args)
@@ -29,24 +30,30 @@ namespace Reseapp
             bool meny = true;
             while (meny)
             {
-                
 
-                //Console.ForegroundColor = ConsoleColor.Cyan;
+                //Console.BackgroundColor = ConsoleColor.Gray;
+               // Console.Clear();
                 Console.WriteLine();
 
-                RotatingColors("★✈☀★✈☀★✈☀★✈☀★✈☀★✈☀★✈☀★✈☀★✈☀★✈☀★✈☀★✈☀");
+                RotatingColors("★✈☀★✈☀★✈☀★✈☀★✈☀★✈☀★✈☀★✈☀★✈☀★✈☀★✈☀★✈☀★✈☀");
                 Console.ForegroundColor = ConsoleColor.DarkGreen;
-                Console.WriteLine("  Välkommen till valuta- och tidsappen! Vi begränsar dig till 7 länder.");
+                //Console.BackgroundColor = ConsoleColor.Gray;
+                Console.WriteLine();
+                Console.WriteLine(" Välkommen till valuta- och tidsappen! Vi begränsar dig till dessa 7 länder:");
+                Console.WriteLine();
+                Console.WriteLine(" Tyskland    Australien    Kroatien    England    Thailand    Danmark    USA");
+                Console.WriteLine();
                 Console.ForegroundColor = ConsoleColor.Black;
-                RotatingColors("★✈☀★✈☀★✈☀★✈☀★✈☀★✈☀★✈☀★✈☀★✈☀★✈☀★✈☀★✈☀");
-
+                RotatingColors("★✈☀★✈☀★✈☀★✈☀★✈☀★✈☀★✈☀★✈☀★✈☀★✈☀★✈☀★✈☀★✈☀");
+              
 
                 Console.ForegroundColor = ConsoleColor.Black;
 
                 Console.WriteLine();
                 Console.ForegroundColor = ConsoleColor.Magenta;
                 Console.WriteLine("Skriv V för att kolla valuta, skriv T för att kolla tidszon.");
-                Console.ResetColor();
+                //Console.ResetColor();
+                Console.ForegroundColor = ConsoleColor.Black;
                 Console.WriteLine();
                 Console.WriteLine("[V] Valuta  $");
                 Console.WriteLine("[T] Tidszon ⏰");
@@ -62,7 +69,7 @@ namespace Reseapp
                     case "V":
                         Console.ForegroundColor = ConsoleColor.Magenta;
                         Console.WriteLine("Vilken valuta vill du konvertera?");
-                        Console.ResetColor();
+                        Console.ForegroundColor = ConsoleColor.Black;
                         Console.WriteLine();
                         Console.WriteLine("[E] Euro");
                         Console.WriteLine("[U] US Dollar");
@@ -73,6 +80,7 @@ namespace Reseapp
                         Console.WriteLine("[A] Australiska Dollar");
                         decimal valdValuta = 0;
                         Console.WriteLine();
+                        
 
                         while (true)
                         {
@@ -89,15 +97,22 @@ namespace Reseapp
                                 Console.WriteLine("Du har matat in ett felaktigt värde, mata in ett nytt");
                             }
                         }
-
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                       // Console.BackgroundColor = ConsoleColor.Gray;
                         Console.WriteLine("Ange i svenska kronor hur mycket du vill konvertera:");
+                        
+                       // Console.BackgroundColor = ConsoleColor.Gray;
+                        //Console.Clear();
+                        //Console.ResetColor();
                         decimal inmatad = decimal.Parse(Console.ReadLine());
                         var total=Math.Round(Valutauträknare(valdValuta, inmatad), 2);
                         Console.WriteLine();
+                        Console.ForegroundColor = ConsoleColor.Magenta;              
                         Console.WriteLine(inmatad + " svenska kronor blir "+total+ " i vald valuta. ");
                         Console.WriteLine("Tryck Enter för att kommma tillbaka till startmenyn.");
+                        Console.ForegroundColor = ConsoleColor.Black;
                         Console.ReadKey();
-                        Console.Clear();
+                        //Console.Clear();
 
                         break;
 
@@ -107,10 +122,13 @@ namespace Reseapp
                     case "T":
                         DateTime sverige = DateTime.Now;
                         var now = sverige.ToShortTimeString();
-                        
 
-                        Console.WriteLine($"Klockan är nu {now} i Sverige, vilket land vill du jämföra med?");
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+
+                        Console.WriteLine($"Klockan är nu {now} i Stockholm, vilken huvudstad vill du jämföra med?");
                         Console.WriteLine("Tänk på att undvika jetlag när du reser!");
+                        Console.ForegroundColor = ConsoleColor.Black;
+                        //Console.ResetColor();
                         Console.WriteLine("[B] Berlin");
                         Console.WriteLine("[S] Sydney");
                         Console.WriteLine("[Z] Zagreb");
@@ -138,8 +156,8 @@ namespace Reseapp
 
                         TimeSpan konverterad = Tidsskillnad(sverige, valdStad);
                         var trimmad = Math.Round(konverterad.TotalHours);
-
-                        Console.WriteLine("Tiden i staden du angett är " + valdStad.ToShortTimeString()+",och tidsskillnaden mot Sverige är " + trimmad + " timmar.");
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.WriteLine("Tiden i staden du angett är " + valdStad.ToShortTimeString()+",och tidsskillnaden mot Stockholm är " + trimmad + " timmar.");
                         Console.WriteLine("Tryck Enter för att komma tillbaka till startmenyn.");
                         Console.ReadKey();
                         Console.Clear();
@@ -148,9 +166,9 @@ namespace Reseapp
 
 
                     case "Q":
-
-
-                        Console.WriteLine("Programmet avslutas");
+                       
+               
+                        Console.WriteLine("Programmet avslutas.");
                         meny = false;
 
                         break;
@@ -168,7 +186,7 @@ namespace Reseapp
 
         private static void RotatingColors(string text)
         {
-            var palette = new List<ConsoleColor> { ConsoleColor.Cyan, ConsoleColor.Red, ConsoleColor.Yellow };
+            var palette = new List<ConsoleColor> { ConsoleColor.DarkGreen, ConsoleColor.Red, ConsoleColor.Yellow };
 
             for (int i = 0; i < text.Length; i++)
             {

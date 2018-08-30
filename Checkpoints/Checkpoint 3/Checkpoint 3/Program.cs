@@ -8,14 +8,16 @@ namespace Checkpoint_3
     {
         static void Main(string[] args)
         {
-            List<string> result1 = ReorderList(new List<string> { "a", "b", "c", "d", "e" }, new List<int> { 1, 2, 3, 5, 4 });
+            List<string> result1 = ReorderList(new List<string> { "a", "b", "c", "d", "e" }, new List<int> { 3, 2, 1, 5, 4 });
             //List<string> result1 = ReorderList(new List<string> { "a", "b", "c", "d" }, new List<int> { 3,1,4,2 });
             // List<string> result1 = ReorderList(new List<string> { "a", "b" }, new List<int> { 2,2 });
 
+
+
             List<int> finalList = MultipleBy100AndAdd3(new List<int> { 2, 8, 3, 11 });
 
-            //foreach (var item in result1)
-            //{ Console.WriteLine(item); }
+            foreach (var item in result1)
+            { Console.WriteLine(item); }
 
             //foreach (var item in finalList)
             //{ Console.WriteLine(item); }
@@ -25,12 +27,22 @@ namespace Checkpoint_3
         {
             //var thrownList = new List<string>();
             //int index = 0;
+            var kalle  = new List<string>();
 
-            for (int i = 0; i < positionList.Count; i++)
+            //string xxx = stringList[2];
+
+            foreach (int position in positionList)
             {
-                stringList = stringList.OrderBy(x => positionList[i++]).ToList();
+                // item=3
+                var x = stringList[position - 1];
+                kalle.Add(x);
+
             }
-            return stringList;
+            //for (int i = 0; i < positionList.Count; i++)
+            //{
+            //    stringList = stringList.OrderBy(x => positionList[i++]).ToList();
+            //}
+            return kalle;
 
         }
 

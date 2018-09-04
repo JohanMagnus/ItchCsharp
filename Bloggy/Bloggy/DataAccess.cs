@@ -10,13 +10,13 @@ namespace Bloggy
 {
     public class DataAccess
     {
-        
+
         string conString = @"Server=(localdb)\mssqllocaldb;Database=Blog";
 
         public List<BlogPost> GetAllBlogPost()
 
         {
-            
+
             string sql = @"select Id, Title, Author
                             from BlogPost";
 
@@ -67,8 +67,6 @@ namespace Bloggy
                 SqlDataReader reader = command.ExecuteReader();
                 reader.Read();
 
-
-
                 var bp = new BlogPost();
 
                 int id = reader.GetSqlInt32(0).Value;
@@ -83,12 +81,52 @@ namespace Bloggy
 
         }
 
+        internal List<Comment> GetComments(int postId)
+        {
+            string sql = @"Select Id, text, BlogPostId from Comment
+                            where BlogPostId=@number  ";
+
+            using (SqlConnection connection = new SqlConnection(conString))
+            using (SqlCommand command = new SqlCommand(sql, connection))
+            {
+                connection.Open();
+                command.Parameters.Add(new SqlParameter("number", postId));
+                SqlDataReader reader = command.ExecuteReader();
+
+
+
+                var result = new List<Comment>();
+
+                while (reader.Read())
+                {
+
+                    var comment = new Comment();
+
+                    int id = reader.GetSqlInt32(0).Value;
+                    string text = reader.GetSqlString(1).Value;
+                    int blogpostid = reader.GetSqlInt32(2).Value;
+
+                    comment.Id = id;
+                    comment.Text = text;
+                    comment.BlogPostId = blogpostid;
+                    //bp.Id = id;
+                    //bp.Title = title;
+                    //bp.Author = author;
+
+                    result.Add(comment);
+
+                }
+
+                return result;
+            }
+        }
+
         public void UpdateBlogPost(BlogPost post)
         {
             string sql = @"update BlogPost
                             set Title=@Title where Id=@Id";
 
-      
+
             using (SqlConnection connection = new SqlConnection(conString))
             using (SqlCommand command = new SqlCommand(sql, connection))
             {
@@ -99,6 +137,7 @@ namespace Bloggy
 
             }
         }
+
 
     }
 }

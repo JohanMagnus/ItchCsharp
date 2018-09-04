@@ -18,22 +18,49 @@ namespace Bloggy
 
         private void PageMainMenu()
         {
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("Välkommen till huvudmenyn");
+            Console.ResetColor();
             ShowAllBlogPosts();
 
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("Vad vill du göra?");
+            Console.ResetColor();
             Console.WriteLine("a) Gå till huvudmenyn");
             Console.WriteLine("b) Uppdatera en bloggpost");
+            Console.WriteLine("c) Se kommentarer");
+            
+            
 
             var command = Console.ReadKey().Key;
 
-            switch(command)
+            switch (command)
             {
                 case ConsoleKey.A: PageMainMenu(); break;
                 case ConsoleKey.B: PageUpdatePost(); break;
-
+                case ConsoleKey.C: SeeComments(); break;
 
             }
+
+        }
+
+        private void SeeComments()
+        {
+            Console.Clear();
+
+            ShowAllBlogPosts();
+            Console.Write("Från vilket inlägg vill du se kommentarer?");
+            int postId = int.Parse(Console.ReadLine());
+
+            List<Comment> comments = dataaccess.GetComments(postId);
+
+            foreach (Comment comment in comments)
+            {
+                Console.WriteLine(comment.Text);
+            }
+            
 
         }
 
@@ -56,12 +83,12 @@ namespace Bloggy
 
             Console.WriteLine("Bloggposten uppdaterad. Tryck på valfri knapp för att komma till huvudmenyn");
             Console.ReadKey();
-            PageMainMenu(); 
+            PageMainMenu();
         }
 
         private void ShowAllBlogPosts()
         {
-            
+
             List<BlogPost> allPosts = dataaccess.GetAllBlogPost();
 
             foreach (BlogPost bp in allPosts)

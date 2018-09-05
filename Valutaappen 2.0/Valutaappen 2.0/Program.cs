@@ -3,26 +3,34 @@ using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
-
+using Valutaappen_2._0.Domain;
 
 namespace Valutaappen_2._0
 {
     class Program
     {
+        
 
         static void Main(string[] args)
         {
-            Task t = new Task(DownloadPageAsync);
-            t.Start();
+            GetDataAccess dataaccess = new GetDataAccess();
+            //Task<string> t = new Task<string>(DownloadPageAsync);
+            //t.Start();
+
+            GetAPI api = DownloadPageAsync().Result;
             Console.WriteLine("Downloading page...");
-            Console.ReadLine();
+            Console.WriteLine("Getting Data...");
+            
 
-
+           dataaccess.InsertIntoSQL(api);
+        
 
         }
 
-        static async void DownloadPageAsync()
+        static async Task<GetAPI> DownloadPageAsync()
         {
+
+            
             // ... Target page.
             string page = "http://data.fixer.io/api/latest?access_key=e241cb375d68ed80e30793039b2bbed4&format=1";
 
@@ -51,18 +59,22 @@ namespace Valutaappen_2._0
                 {
                    var currency = new Currency();
                     string[] split = row.Trim().Split(':');
-                    string stringOfCode = split[0];
-                    decimal stringOfRate = decimal.Parse(split[1]);
+                    string stringOfCode = split[0].Replace("\"","");
+                    decimal stringOfRate = decimal.Parse(split[1].Replace('.', ',').Replace("\r\n", "").Replace("}", ""));
                     currency.Code = stringOfCode;
                     currency.Rate = stringOfRate;
 
                     currencies.Add(currency);
 
                 }
+
+                api.Currencies = currencies;
+
+                return api;
                 
 
-                
-                
+
+
             }
             
 

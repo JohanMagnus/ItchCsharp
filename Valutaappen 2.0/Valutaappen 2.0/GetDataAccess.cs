@@ -15,21 +15,25 @@ namespace Valutaappen_2._0
 
         public void InsertIntoSQL(GetAPI api)
         {
-            string sql = @"Insert into ExchangeRate ( Code, Rate, Date) 
-                            Values (@Code, @Rate, @Date)";
-                                //where Code=@Code";
-
-            using (SqlConnection connection = new SqlConnection(conString))
-            using (SqlCommand command = new SqlCommand(sql, connection))
+            foreach (var item in api.Currencies)
             {
-                connection.Open();
-                command.Parameters.Add(new SqlParameter("Code", api.Base));
-                command.Parameters.Add(new SqlParameter("Rate", api.Rates));
-                command.Parameters.Add(new SqlParameter("Date", api.Date));
+
+                string sql = @"Insert into ExchangeRate ( Code, Rate, Date) 
+                            Values (@Code, @Rate, @Date)";
+                //where Code=@Code";
+
+                using (SqlConnection connection = new SqlConnection(conString))
+                using (SqlCommand command = new SqlCommand(sql, connection))
+                {
+                    connection.Open();
+                    command.Parameters.Add(new SqlParameter("Code", item.Code));
+                    command.Parameters.Add(new SqlParameter("Rate", item.Rate));
+                    command.Parameters.Add(new SqlParameter("Date", api.Date));
 
 
-                command.ExecuteNonQuery();
-               
+                    command.ExecuteNonQuery();
+
+                }
             }
            // DateTime date = reader.GetSqlDateTime(0).Value;
             //    string code = reader.GetSqlString(1).Value;

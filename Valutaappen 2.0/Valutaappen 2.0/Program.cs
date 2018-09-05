@@ -18,6 +18,7 @@ namespace Valutaappen_2._0
             //t.Start();
 
             GetAPI api = DownloadPageAsync().Result;
+            
             Console.WriteLine("Downloading page...");
             Console.WriteLine("Getting Data...");
             
@@ -59,7 +60,7 @@ namespace Valutaappen_2._0
                 {
                    var currency = new Currency();
                     string[] split = row.Trim().Split(':');
-                    string stringOfCode = split[0].Replace("\"","");
+                    string stringOfCode = split[0].Replace("\"","").Replace("\r\n", "").Replace("{", "").Trim();
                     decimal stringOfRate = decimal.Parse(split[1].Replace('.', ',').Replace("\r\n", "").Replace("}", ""));
                     currency.Code = stringOfCode;
                     currency.Rate = stringOfRate;

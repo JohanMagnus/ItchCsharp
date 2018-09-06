@@ -3,5 +3,9 @@
 --Values (@Code, @Rate, @Date)
 --where Code=@Code
 
-Select Code, name, Rate, Date from ExchangeRate
-join Country on Country.CodeID = ExchangeRate.Code
+--Select Code, Country, Rate from ExchangeRate
+--join CurrencyLocation on CurrencyLocation.CodeID = ExchangeRate.Code
+
+--Select Top 1 Rate from ExchangeRate
+--where code= 'AED'
+--order by Date, Id desc

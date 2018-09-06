@@ -35,42 +35,48 @@ namespace Valutaappen_2._0
 
                 }
             }
-           // DateTime date = reader.GetSqlDateTime(0).Value;
-            //    string code = reader.GetSqlString(1).Value;
-            //    decimal rate = reader.GetSqlDecimal(2).Value;
-            //    string name = reader.GetSqlString(3).Value;
-            //using (SqlConnection connection = new SqlConnection(conString))
-            //using (SqlCommand command = new SqlCommand(sql, connection))
-            //{
-            //    connection.Open();
-            //    SqlDataReader reader = command.ExecuteReader();
+           
 
 
-            //var result = new List<Currency>();
+        }
 
-            //while (reader.Read())
-            //{
+        internal List<Currency> GetAllRates()
+        {
+            string sql = @"Select Code, Country, Rate from ExchangeRate
+                           join CurrencyLocation on CurrencyLocation.CodeID = ExchangeRate.Code";
 
-            //    var c = new Currency();
-
-            //    DateTime date = reader.GetSqlDateTime(0).Value;
-            //    string code = reader.GetSqlString(1).Value;
-            //    decimal rate = reader.GetSqlDecimal(2).Value;
-            //    string name = reader.GetSqlString(3).Value;
-
-            //    c.TimeStamp = date;
-            //    c.Code = code;
-            //    c.Rate = rate;
-            //    c.Name = name;
-
-            //    result.Add(c);
-
-            //}
-
-            //return result;
-            // }
+         
+            using (SqlConnection connection = new SqlConnection(conString))
+            using (SqlCommand command = new SqlCommand(sql, connection))
+            {
+                connection.Open();
+             
+                SqlDataReader reader = command.ExecuteReader();
 
 
+                var result = new List<Currency>();
+
+                while (reader.Read())
+                {
+
+                    var c = new Currency();
+
+                    string code = reader.GetSqlString(0).Value;
+                    string country = reader.GetSqlString(1).Value;
+                    decimal rate = reader.GetSqlDecimal(2).Value;
+                    
+
+                    
+                    c.Code = code;
+                    c.Rate = rate;
+                    c.Name = country;
+
+                    result.Add(c);
+
+                }
+
+                return result;
+            }
         }
     }
 }

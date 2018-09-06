@@ -3,4 +3,5 @@
 --Values (@Code, @Rate, @Date)
 --where Code=@Code
 
-Select * from ExchangeRate
+Select Code, name, Rate, Date from ExchangeRate
+join Country on Country.CodeID = ExchangeRate.Code

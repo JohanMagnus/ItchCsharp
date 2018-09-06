@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Valutaappen
 {
-    
+
 
     class Program
     {
@@ -24,6 +24,13 @@ namespace Valutaappen
             public decimal Price { get; set; }
         }
 
+        public class Valuta
+        {
+            public string Code { get; set; }
+            public string Country { get; set; }
+
+        }
+
         private static void Test()
         {
             Product product = new Product();
@@ -36,21 +43,9 @@ namespace Valutaappen
 
             string output = "{\"Name\":\"Apple\",\"Price\":3.99}";
 
-
-            //string output = "";
-            // 
-            
-            //  "Name": "Apple",
-            //  "ExpiryDate": "2008-12-28T00:00:00",
-            //  "Price": 3.99,
-            //  "Sizes": [
-            //    "Small",
-            //    "Medium",
-            //    "Large"
-            //  ]
-            //}
-
             Product deserializedProduct = JsonConvert.DeserializeObject<Product>(output);
+
+            
         }
 
         static async void DownloadPageAsync()

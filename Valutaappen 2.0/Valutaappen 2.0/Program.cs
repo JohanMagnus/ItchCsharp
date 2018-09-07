@@ -70,14 +70,18 @@ namespace Valutaappen_2._0
             Console.WriteLine();
             Console.WriteLine();
 
-            
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
             Console.WriteLine("Skriv in vilken valuta du vill konvertera, använd valutakoden: ");
+            Console.ResetColor();
             string valuta = Console.ReadLine().ToUpper();
-            if (valuta == "JMD")
-                BobMarley();
+
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
             Console.WriteLine("Vilken valuta vill du konvertera till: ");
+            Console.ResetColor();
             string valuta2 = Console.ReadLine().ToUpper();
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
             Console.WriteLine("Hur mycket vill du konvertera: ");
+            Console.ResetColor();
             decimal money = decimal.Parse(Console.ReadLine());
 
             GetDataAccess dataaccess = new GetDataAccess();
@@ -88,16 +92,13 @@ namespace Valutaappen_2._0
 
         }
 
-        private static void BobMarley()
-        {
-            
-        }
+        
 
         private static void ShowAllRates()
         {
             GetDataAccess dataaccess = new GetDataAccess();
             List<Currency> allRates = dataaccess.GetAllRates();
-            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
             Console.WriteLine("\nFörkortning".PadRight(21) + "Land".PadRight(30) + "Växelkurs mot Euro\n".PadRight(30));
             Console.ResetColor();
 

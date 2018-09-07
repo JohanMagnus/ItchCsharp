@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
+using System.Threading;
 using System.Threading.Tasks;
 using Valutaappen_2._0.Domain;
 
@@ -13,40 +14,67 @@ namespace Valutaappen_2._0
 
         static void Main(string[] args)
         {
-            GetDataAccess dataaccess = new GetDataAccess();
-            //Task<string> t = new Task<string>(DownloadPageAsync);
-            //t.Start();
 
-           // GetAPI api = DownloadPageAsync().Result; 
-            
-            Console.WriteLine("Downloading page...");
-            Console.WriteLine("Getting Data...");
-            
-
-           //dataaccess.InsertIntoSQL(api);
-
-            Console.WriteLine("Välkommen till Valutaappen");
-            Console.WriteLine("a) Se alla valutor i världen (bas EURO dagens kurs)");
-            Console.WriteLine("b) Konvertera en valuta till valfri");
-            
-
-            var command = Console.ReadKey().Key;
-
-            switch (command)
+            for (int i = 1; i < 50; i++)
             {
-                case ConsoleKey.A: ShowAllRates(); break;
-                case ConsoleKey.B: ConvertRates(); break;
-                
-
+                Console.SetWindowSize(3 * i, i);
+                System.Threading.Thread.Sleep(200);
             }
 
+            string Progresbar = "This is a currency converter";
+            var title = "";
+            while (true)
+            {
+                for (int i = 0; i < Progresbar.Length; i++)
+                {
+                    title += Progresbar[i];
+                    Console.Title = title;
+                    Thread.Sleep(100);
+                }
+                title = "";
+                Console.Clear();
+
+                //GetDataAccess dataaccess = new GetDataAccess();
+
+                GetAPI api = DownloadPageAsync().Result;
+
+                //dataaccess.InsertIntoSQL(api);
+
+
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine("Välkommen till Valutaappen, glöm inte papper och penna");
+                Console.ResetColor();
+                Console.WriteLine();
+                Console.WriteLine("A) Se alla valutor i världen med EURO som bas");
+                Console.WriteLine("B) Konvertera en valfri valuta");
+                Console.WriteLine("C) Avsluta appen");
+
+                
+                var command = Console.ReadKey().Key;
+                if (command == ConsoleKey.C)
+                    break;
+                switch (command)
+                {
+                    case ConsoleKey.A: ShowAllRates(); break;
+                    case ConsoleKey.B: ConvertRates(); break;
+                    
+                }
+                Console.ReadKey();
+                Console.Clear();
+            }
         }
 
+       
         private static void ConvertRates()
         {
+            Console.WriteLine();
+            Console.WriteLine();
 
-            Console.WriteLine("Skriv in vilken valuta du vill konvertera: ");
+            
+            Console.WriteLine("Skriv in vilken valuta du vill konvertera, använd valutakoden: ");
             string valuta = Console.ReadLine().ToUpper();
+            if (valuta == "JMD")
+                BobMarley();
             Console.WriteLine("Vilken valuta vill du konvertera till: ");
             string valuta2 = Console.ReadLine().ToUpper();
             Console.WriteLine("Hur mycket vill du konvertera: ");
@@ -55,8 +83,14 @@ namespace Valutaappen_2._0
             GetDataAccess dataaccess = new GetDataAccess();
             dataaccess.GetConvertRates(valuta, valuta2, money);
 
+            Console.ReadKey();
+            Console.Clear();
 
+        }
 
+        private static void BobMarley()
+        {
+            
         }
 
         private static void ShowAllRates()
@@ -72,9 +106,10 @@ namespace Valutaappen_2._0
             {
                 counter++;  
                 Console.WriteLine(item.Code.PadRight(20) + item.Name.PadRight(30) + item.Rate.ToString().PadRight(30));
-                if (counter == 10)
+                if (counter == 25)
                     Console.ReadKey();
             }
+
         }
 
         static async Task<GetAPI> DownloadPageAsync()

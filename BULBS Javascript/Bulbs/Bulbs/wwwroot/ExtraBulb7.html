@@ -1,0 +1,100 @@
+﻿
+
+<link rel="stylesheet" href="css/Main.css">
+<meta charset="utf-8" />
+<h1 id="rubbe">Number of Bulbs</h1>
+
+<input id="textruta" />
+<div id="sometext">
+</div>
+
+<!--<div id="Bulbcounter"></div>-->
+
+
+
+
+<div id="placeForBulbs">
+</div>
+<div id="placeForButtons">
+</div>
+
+
+
+<div id="page-black"></div>
+
+<script>
+
+
+
+
+    textruta.addEventListener("keyup", () => {
+        PrintNrOfBulbs(textruta.value)
+    })
+
+    function LightOrUnlightBulb() {
+        let counter = 0
+        let knapp1 = document.getElementById("knapp1")
+        knapp1.addEventListener("click", () => {
+
+            counter++
+            Bulbcounter.innerHTML = "Bulbcounter:  " + counter
+            if (counter == 1) {
+                placeForBulb1.innerHTML =
+                    "<img src='croplight.jpg' />"
+                placeForBulb5.innerHTML =
+                    "<img src='cropUnlight.jpg' />"
+            }
+            if (counter == 2) {
+                placeForBulb2.innerHTML =
+                    "<img src='croplight.jpg' />"
+                placeForBulb1.innerHTML =
+                    "<img src='cropUnlight.jpg' />"
+            }
+            if (counter == 3) {
+                placeForBulb3.innerHTML =
+                    "<img src='croplight.jpg' />"
+                placeForBulb2.innerHTML =
+                    "<img src='cropUnlight.jpg' />"
+            }
+            if (counter == 4) {
+                placeForBulb4.innerHTML =
+                    "<img src='croplight.jpg' />"
+                placeForBulb3.innerHTML =
+                    "<img src='cropUnlight.jpg' />"
+            }
+            if (counter == 5) {
+                placeForBulb5.innerHTML =
+                    "<img src='croplight.jpg' />"
+                placeForBulb4.innerHTML =
+                    "<img src='cropUnlight.jpg' />"
+                counter = 0
+            }
+
+
+        })
+    }
+
+    function PrintNrOfBulbs(int) {
+
+        let placeForBulbs = document.getElementById("placeForBulbs");
+        let placeForButtons = document.getElementById("placeForButtons");
+
+        for (let i = 0; i < int; i++) {
+            let newButton = document.createElement("button");
+            placeForButtons.appendChild(newButton);
+            let newBulb = document.createElement("img");
+            newBulb.src ="cropUnlight.jpg"
+            placeForBulbs.appendChild(newBulb);
+
+
+            //img src = 'cropUnlight.jpg'
+
+           // placeForBulb.innerHTML = "<img src='cropUnlight.jpg' />"
+        }
+
+    }
+
+
+
+
+</script>

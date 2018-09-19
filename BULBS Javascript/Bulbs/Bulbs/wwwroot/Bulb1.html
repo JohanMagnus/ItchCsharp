@@ -1,0 +1,40 @@
+﻿
+<link rel="stylesheet" href="css/Main.css">
+<meta charset="utf-8" />
+<h1 id="rubbe">Bulb</h1>
+
+<button id="knapp1">Light Bulb 1 </button>
+<button id="knapp2">Light Bulb 2 </button>
+<button id="knapp3">Light Bulb 3 </button>
+
+<div id="placeForBulb1">
+</div>
+<div id="placeForBulb2">
+</div>
+<div id="placeForBulb3">
+</div>
+<div id="page-black"></div>
+
+<script>
+
+    placeForBulb1.innerHTML = "<img src='cropUnlight.jpg' />"
+    placeForBulb2.innerHTML = "<img src='cropUnlight.jpg' />"
+    placeForBulb3.innerHTML = "<img src='cropUnlight.jpg' />"
+    
+    let knapp1 = document.getElementById("knapp1")
+    knapp1.addEventListener("click", () => {
+        placeForBulb1.innerHTML =
+            "<img src='croplight.jpg' />"
+    })
+    let knapp2 = document.getElementById("knapp2")
+    knapp2.addEventListener("click", () => {
+        placeForBulb2.innerHTML =
+            "<img src='croplight.jpg' />"
+    })
+    let knapp3 = document.getElementById("knapp3")
+    knapp3.addEventListener("click", () => {
+        placeForBulb3.innerHTML =
+            "<img src='croplight.jpg' />"
+    })
+
+</script>

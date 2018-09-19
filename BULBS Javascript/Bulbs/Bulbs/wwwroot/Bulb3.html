@@ -1,0 +1,75 @@
+﻿
+<link rel="stylesheet" href="css/Main.css">
+<meta charset="utf-8" />
+<h1 id="rubbe">Bulb</h1>
+
+<button id="knapp1">Press to toggle lighted bulb </button>
+
+<div id="Bulbcounter" ></div>
+
+<div id="placeForBulb1">
+</div>
+<div id="placeForBulb2">
+</div>
+<div id="placeForBulb3">
+</div>
+<div id="placeForBulb4">
+</div>
+<div id="placeForBulb5">
+</div>
+<div id="page-black"></div>
+
+<script>
+
+    placeForBulb1.innerHTML = "<img src='cropUnlight.jpg' />"
+    placeForBulb2.innerHTML = "<img src='cropUnlight.jpg' />"
+    placeForBulb3.innerHTML = "<img src='cropUnlight.jpg' />"
+    placeForBulb4.innerHTML = "<img src='cropUnlight.jpg' />"
+    placeForBulb5.innerHTML = "<img src='cropUnlight.jpg' />"
+
+    let counter = 0
+    
+    
+    let knapp1 = document.getElementById("knapp1")
+    knapp1.addEventListener("click", () => {
+        
+        counter++
+        Bulbcounter.innerHTML = "Bulbcounter:  " + counter
+        if (counter == 1) {
+            placeForBulb1.innerHTML =
+                "<img src='croplight.jpg' />"
+            placeForBulb5.innerHTML =
+                "<img src='cropUnlight.jpg' />"
+        }
+        if (counter == 2) {
+            placeForBulb2.innerHTML =
+                "<img src='croplight.jpg' />"
+            placeForBulb1.innerHTML =
+                "<img src='cropUnlight.jpg' />"
+        }
+        if (counter == 3) {
+            placeForBulb3.innerHTML =
+                "<img src='croplight.jpg' />"
+            placeForBulb2.innerHTML =
+                "<img src='cropUnlight.jpg' />"
+        }
+        if (counter == 4) {
+            placeForBulb4.innerHTML =
+                "<img src='croplight.jpg' />"
+            placeForBulb3.innerHTML =
+                "<img src='cropUnlight.jpg' />"
+        }
+        if (counter == 5) {
+            placeForBulb5.innerHTML =
+                "<img src='croplight.jpg' />"
+            placeForBulb4.innerHTML =
+                "<img src='cropUnlight.jpg' />"
+            counter=0
+        }
+        
+    })
+
+   
+
+
+</script>

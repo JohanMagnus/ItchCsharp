@@ -1,0 +1,71 @@
+﻿
+<link rel="stylesheet" href="css/Main.css">
+<meta charset="utf-8" />
+<h1 id="rubbe">Bulb</h1>
+
+<button id="knapp1">On / Off  1</button>
+<button id="knapp2">On / Off  2</button>
+<button id="knapp3">On / Off  3 </button>
+
+
+
+<div id="placeForBulb1">
+</div>
+<div id="placeForBulb2">
+</div>
+<div id="placeForBulb3">
+</div>
+
+</div>
+<div id="page-black"></div>
+
+<script>
+
+    placeForBulb1.innerHTML = "<img src='cropUnlight.jpg' />"
+    placeForBulb2.innerHTML = "<img src='cropUnlight.jpg' />"
+    placeForBulb3.innerHTML = "<img src='cropUnlight.jpg' />"
+    
+
+    let counter = 0
+
+
+    let knapp1 = document.getElementById("knapp1")
+    knapp1.addEventListener("click", () => {
+
+        counter++
+        if (counter == 1) 
+            placeForBulb1.innerHTML = "<img src='croplight.jpg' />"
+        if (counter == 2) {
+            placeForBulb1.innerHTML = "<img src='cropUnlight.jpg' />"
+            counter=0
+        }
+    })
+    let knapp2 = document.getElementById("knapp2")
+    knapp2.addEventListener("click", () => {
+
+        counter++
+        if (counter == 1)
+            placeForBulb2.innerHTML = "<img src='croplight.jpg' />"
+        if (counter == 2) {
+            placeForBulb2.innerHTML = "<img src='cropUnlight.jpg' />"
+            counter = 0
+        }
+    })
+    let knapp3 = document.getElementById("knapp3")
+    knapp3.addEventListener("click", () => {
+
+        counter++
+        if (counter == 1)
+            placeForBulb3.innerHTML = "<img src='croplight.jpg' />"
+        if (counter == 2) {
+            placeForBulb3.innerHTML = "<img src='cropUnlight.jpg' />"
+            counter = 0
+        }
+    })
+
+
+
+
+
+
+</script>

@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Nivå 2</title>
+    <link rel="stylesheet" href="Oscar.css">
+
+</head>
+<body>
+
+    <div id="placeForEggs">
+    </div>
+    <!--<div id="placeForEgg2">
+    </div>
+    <div id="placeForEgg3">
+    </div>-->
+    <div id="page-black"></div>
+    <script>
+
+        
+        placeForEggs.innerHTML = "<img src='egg1-closed.png' />"
+        //placeForEgg2.innerHTML = "<img src='egg1-closed.png' />"
+        //placeForEgg3.innerHTML = "<img src='egg1-closed.png' />"
+
+        let counter1 = 0;
+        placeForEggs.addEventListener("click", () => {
+            counter1++
+            if (counter1 == 1)
+                placeForEggs.innerHTML = "<img src='egg2-open.png' />"
+            if (counter1 == 2)
+                placeForEggs.innerHTML = "<img src='egg3-double.png' />"
+            if (counter1 == 3) {
+                placeForEggs.innerHTML = "<img src='egg1-closed.png' />"
+                createNewEgg()
+                counter1= 0
+            }
+        })
+
+        function createNewEgg() {
+            let placeForEggs = document.getElementById("placeForEggs");
+
+            let newEgg = document.createElement("img");
+            newEgg.src = "egg1-closed.png"
+            placeForEggs.appendChild(newEgg);
+
+            
+
+            //placeForEgg1.innerHTML = "<img src='egg1-closed.png' />"
+            //placeForEgg2.innerHTML = "<img src='egg1-closed.png' />"
+
+        }
+        //let counter2 = 0;
+        //placeForEgg2.addEventListener("click", () => {
+        //    counter2++
+        //    if (counter2 == 1)
+        //        placeForEgg2.innerHTML = "<img src='egg2-open.png' />"
+        //    if (counter2 == 2)
+        //        placeForEgg2.innerHTML = "<img src='egg3-double.png' />"
+        //    if (counter2 == 3) {
+        //        placeForEgg2.innerHTML = "<img src='egg1-closed.png' />"
+        //        counter2 = 0
+        //    }
+        //})
+        //let counter3 = 0;
+        //placeForEgg3.addEventListener("click", () => {
+        //    counter3++
+        //    if (counter3 == 1)
+        //        placeForEgg3.innerHTML = "<img src='egg2-open.png' />"
+        //    if (counter3 == 2)
+        //        placeForEgg3.innerHTML = "<img src='egg3-double.png' />"
+        //    if (counter3 == 3) {
+        //        placeForEgg3.innerHTML = "<img src='egg1-closed.png' />"
+        //        counter3 = 0
+        //    }
+        //})
+
+
+    </script>
+</body>
+
+</html>

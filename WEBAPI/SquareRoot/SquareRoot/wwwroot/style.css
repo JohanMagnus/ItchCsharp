@@ -1,0 +1,18 @@
+﻿
+input, button, label{
+    display: block;
+    margin: 30px;
+    padding: 10px;
+    color: blue;
+    font-style: italic;
+    border-spacing: 500px;
+
+}
+
+.success{
+    color: green;
+}
+
+.fail{
+    color: red;
+}

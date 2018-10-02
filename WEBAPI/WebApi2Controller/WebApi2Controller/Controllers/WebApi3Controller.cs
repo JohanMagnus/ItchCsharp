@@ -103,6 +103,32 @@ namespace WebApi2Controller.Controllers
             //"<img src='croplight.jpg' />"
 
         }
+        [HttpGet("AddPerson")]
+        public IActionResult AddPerson(SimplePerson person)
+        {
+                return Ok($"Bra gjort! {person.Name} är {person.Age} och lades till i databasen");
+        }
+        [HttpGet("AddPersonValidate")]
+        public IActionResult AddPersonValidate(SimplePerson person)
+        {
+            if (person.Name == null || person?.Age == null)
+                return BadRequest("Förnamn och ålder måste anges");
+            if (person.Age < 1|| person.Age > 119)
+                return BadRequest("Nu har du varit orimlig, så gammal eller ung kan du inte vara");
+            if (person.Name.Length > 20)
+                return BadRequest("Så långt namn kan du inte ha");
+
+            return Ok($"Bra gjort! {person.Name} är {person.Age} och lades till i databasen");
+        }
+        [HttpGet("AddPersonValidateAttribute")]
+        public IActionResult AddPersonValidateAttribute(SimplePerson person)
+        {
+            if (ModelState.IsValid)
+                return Ok($"Bra gjort! {person.Name} är {person.Age} och lades till i databasen");
+            else
+                return BadRequest(ModelState);
+            
+        }
     }
     
 }

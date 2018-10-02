@@ -1,0 +1,36 @@
+﻿body {
+    font-family: Arial;
+    padding: 20px;
+}
+
+a, input, select, textarea {
+    display: block;
+    margin: 3px 0;
+}
+
+br {
+    display: inline-block;
+   
+}
+
+input {
+    width: 300px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+table {
+    border-spacing: 0;
+    width: 100%;
+}
+
+td {
+    border: solid 1px #ddd;
+    padding: 5px 10px;
+}
+
+button {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}

@@ -7,29 +7,24 @@ namespace PluggarTriangel
         static void Main(string[] args)
         {
             Console.WriteLine("Ange kommando: ");
-            string numbers = Console.ReadLine();
-
-            string[] list = numbers.Split("-");
-
-
-            foreach (var item in list)
+            string  number = Console.ReadLine();
+            int tal = int.Parse(number);
+         
+            int rows = 1;
+            for (int i = 0; i < tal; i++)
             {
-                int tal = int.Parse(item);
-                int rows = 1;
-
-                for (int i = 0; i < tal; i++)
+                for (int j = 0; j < rows; j++)
                 {
-                    for (int j = 0; j < rows; j++)
-                    {
-                        Console.Write("*");
+                    Console.Write("*");
 
-                    }
-                    rows++;
-                    Console.WriteLine();
                 }
-                
-                
+                rows++;
+
+                Console.WriteLine();
             }
+
+
+
 
 
 

@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab3</title>
+</head>
+<body>
+
+    <h3>Alla namn</h3>
+    <div id="listor">
+        <ul>
+            <li v-for="item in list">{{item}}</li>
+        </ul>
+        <h3>Börjar på R</h3>
+        <ul>
+            <li v-for="item in listWithR">{{item}}</li>
+        </ul>
+      
+        <h3>Börjar på ett visst tecken</h3>
+        Ange tecken: <input v-model="sometext" /> 
+        <input type="checkbox" v-model="checked" />Känslig för
+        case
+        <ul>
+            <li v-for="item in teckenList">{{item}}</li>
+        </ul>
+
+        <h3>Lägg till ett namn till listan</h3>
+        <input v-model="newName" />
+        <button @click="addName()">Add</button>
+        
+     
+
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="Lab3.js"></script>
+</body>
+</html>

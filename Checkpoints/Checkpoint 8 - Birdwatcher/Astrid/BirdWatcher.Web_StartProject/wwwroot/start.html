@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>start</title>
+    <link href="/css/main.css" rel="stylesheet" />
+</head>
+<body>
+
+    <button onclick="recreateDatabase()" id="recreateButton">Recreate database</button>
+
+
+    <div id="addSpecie">
+
+        <h3>Add Obervations</h3>
+        <p>Date</p>
+        <input id="addFormDate" />
+        <p>Specie</p>
+        <input id="addFormSpecie" />
+        <p>Location</p>
+        <input id="addFormLocation" />
+        <p>Notes</p>
+        <input id="addFormNotes" />
+
+        <button onclick="addSpecie()">Add Specie</button>
+    </div>
+
+    <div>
+        <h3>All observations</h3>
+        <button onclick="showAllObservations()">Show Observation</button>
+        <table id="showObservations"></table>
+    </div>
+
+
+    <h3>Species</h3>
+    <table id="AllSpecies"></table>
+   
+
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

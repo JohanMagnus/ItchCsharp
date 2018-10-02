@@ -13,7 +13,7 @@ namespace Omprov2
 
             for (int i = 0; i < list.Length; i++)
             {
-               int tal = int.Parse(item)
+                int tal = int.Parse(kommando);
                 for (int j = 0; j < tal; j++)
                 {
                     Console.Write("O");

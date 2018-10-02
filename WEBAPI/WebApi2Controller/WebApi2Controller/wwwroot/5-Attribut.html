@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>4-Response</title>
+</head>
+<body>
+    <h1>ATTRIBUT</h1>
+    <h3>Lägga till person</h3>
+
+    <form method="get" action="/WebApi3/AddPerson">
+        Förnamn: <input type="text" name="Name" value="Lisa" />
+        Ålder: <input type="text" name="Age" value="25" />
+        <button type="submit">Lägg till person</button>
+    </form>
+
+    <h3>Validera person</h3>
+    <form method="get" action="/WebApi3/AddPersonValidate">
+        Förnamn: <input type="text" name="Name" value="Lisa" />
+        Ålder: <input type="text" name="Age" value="25" />
+        <button type="submit">Lägg till person</button>
+    </form>
+
+    <h3>Validera person med ModelState</h3>
+    <form method="get" action="/WebApi3/AddPersonValidateAttribute">
+        Förnamn: <input type="text" name="Name" value="Lisa" />
+        Ålder: <input type="text" name="Age" value="25" />
+        <button type="submit">Lägg till person</button>
+    </form>
+
+
+
+</body>
+</html>

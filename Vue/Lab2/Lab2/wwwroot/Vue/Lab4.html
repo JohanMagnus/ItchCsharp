@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab4</title>
+    <link href="/Vue/main.css" rel="stylesheet" />
+   
+</head>
+<body>
+    <h1>Varukorg</h1>
+
+    <div id="varukorg">
+        <div v-for="product in products">
+            <input v-model="product.quantity" />
+            <button v-on:click="addPlus(product)">+</button>
+            <button v-on:click="addMinus(product)">-</button>
+            <div v-if="product.quantity == 0"> NOLL</div>
+            {{product.quantity + " st " + product.name}}
+        </div>
+        <h1> Antal produkter: {{theSum}} </h1>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="Lab4.js"></script>
+</body>
+</html>

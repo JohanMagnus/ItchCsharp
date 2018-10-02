@@ -5,6 +5,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\5-Attribut.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\6-Dokument.html" />
+    <None Include="wwwroot\main.css" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
 

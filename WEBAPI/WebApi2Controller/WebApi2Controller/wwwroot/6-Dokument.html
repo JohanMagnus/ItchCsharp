@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>6-Dokument</title>
+    <link href="main.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>DOKUMENT</h1>
+    
+    
+    <form method="post" action="/WebApi6/AddDocument">
+        Titel: <input type="text" name="Title" value="Johan"/>
+        Antal sidor: <input type="number" name="NumberOfPages" value="25" />
+        Sammanfattning finns:<input type="checkbox" name="HasSummary" checked="checked" value="true" />
+        <!--Sammanfattning: <input type="text" name="HasSummary" value="true" />-->
+        Publiceras:<input type="datetime-local" name="PublishedFrom" value="2017-11-21T13:20" />
+        Pris: <input type="number" name="Price" value="1299"/>
+        Typ:
+        <select name="Type">
+            <option value="PDF">PDF</option>
+            <option value="WordDocument">Word Document</option>
+            <option value="Powerpoint">Powerpoint</option>
+        </select>
+        Taggar:
+        <select name="Tags" multiple>
+            <option value="Genombrott">Genombrott</option>
+            <option value="Forskning"> Forskning</option>
+            <option value="Kultur"> Kultur</option>
+        </select>
+
+        Betyg: <br />
+        (1)<input type="radio" name="Rating" value="1" />
+        (2)<input type="radio" name="Rating" value="2" />
+        (3)<input type="radio" name="Rating" value="3" checked />
+        (4)<input type="radio" name="Rating" value="4" />
+        (5)<input type="radio" name="Rating" value="5" />
+        <button type="submit">OK</button>
+    </form>
+
+
+</body>
+</html>

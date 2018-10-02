@@ -1,0 +1,45 @@
+﻿
+
+<link rel="stylesheet" href="css/Main.css">
+<meta charset="utf-8" />
+<h1 id="rubbe">Panda</h1>
+
+<div id="sometext1"></div>
+<div id="sometext2"></div>
+<input id="textruta1" />
+<input id="textruta2" />
+<div id="sometext3"></div>
+<div id="sometext4"></div>
+
+<script>
+
+    textruta1.addEventListener("keyup", () => {
+        PrintNrOfBulbs(textruta1.value)
+    })
+
+
+    function PrintNrOfBulbs(int) {
+
+        let sometext1 = document.getElementById("textruta1);
+        let sometext2 = document.getElementById("textruta2");
+
+        for (let i = 0; i < int; i++) {
+            let newButton = document.createElement("button");
+            placeForButtons.appendChild(newButton);
+
+            let newBulb = document.createElement("img");
+            newBulb.src = "cropUnlight.jpg"
+            placeForBulbs.appendChild(newBulb);
+
+
+            //img src = 'cropUnlight.jpg'
+
+            // placeForBulb.innerHTML = "<img src='cropUnlight.jpg' />"
+        }
+
+    }
+
+
+
+
+</script>

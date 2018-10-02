@@ -1,0 +1,63 @@
+﻿body {
+    font-family: Arial;
+    padding: 20px;
+    
+}
+
+h3{
+    color: lightslategrey;
+    font: 200 ;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+thead td {
+    color: #52a2b8;
+}
+
+input {
+    padding: 20px;
+    margin: 0 0 10px 0;
+    width: 15%;
+    text-align: center;
+    text-decoration: dotted;
+}
+
+div{
+    display: block;
+}
+
+textarea {
+    height: 60px;
+    margin: 0 0 15px 0;
+}
+
+label {
+    font-size: 12px;
+    margin-left: 1px;
+}
+
+button {
+    background-color: palegreen;
+    border: double;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+button {
+    background-color: palegreen;
+    padding: 20px;
+    border-color: black;
+
+}
+       
+   
